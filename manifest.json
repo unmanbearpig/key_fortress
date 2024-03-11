@@ -2,12 +2,15 @@
   "manifest_version": 2,
   "name": "KeyFortress",
   "version": "1.0",
-  "description": "Disable hotkeys overridden by websites.",
+  "description": "Protect your hotkeys from being messed with by websites like GitHub and ChatGPT!",
   "browser_specific_settings": {
     "gecko": {
       "id": "ffaddon@unmb.pw",
       "strict_min_version": "42.0"
     }
+  },
+  "icon": {
+    "48": "icons/icon48.png"
   },
   "permissions": [
     "activeTab",
