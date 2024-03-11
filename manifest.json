@@ -1,12 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "Hotkey Disabler",
+  "name": "KeyFortress",
   "version": "1.0",
   "description": "Disable hotkeys overridden by websites.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ffaddon@unmb.pw",
+      "strict_min_version": "42.0"
+    }
+  },
   "permissions": [
     "activeTab",
     "storage"
   ],
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

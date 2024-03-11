@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuration</title>
+</head>
+<body>
+  <h1>Configuration</h1>
+  <div>
+    Configuration in the following format { 'domain': [hotkeys] }
+    <br>
+    Where hotkey is a string like 'Ctrl-k' (lowercase key)
+    or 'all' to block all hotkeys.
+    Reload the website page for changes to take effect
+  </div>
+  <textarea id="jsonInput" rows="10" cols="50"></textarea>
+  <button id="saveButton">Save</button>
+
+  <h3>Example</h3>
+  <textarea rows="10">
+{
+  "openai.com": [
+    "Ctrl-k"
+  ],
+  "chat.openai.com": [
+    "Ctrl-k"
+  ]
+}
+  </textarea>
+
+  This extension is extremely low-effort, so the shortcut matching is extremely simple, if you have problems with it, here is the code:
+  <pre>
+function getKeyCombination(event) {
+  var keyCombination = "";
+  if (event.ctrlKey) keyCombination += "Ctrl-";
+  if (event.altKey) keyCombination += "Alt-";
+  if (event.shiftKey) keyCombination += "Shift-";
+  keyCombination += event.key;
+  return keyCombination;
+}
+  </pre>
+
+  <script src="options.js"></script>
+
+</body>
+</html>
+
