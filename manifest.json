@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Hotkey Disabler",
+  "version": "1.0",
+  "description": "Disable hotkeys overridden by websites.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
