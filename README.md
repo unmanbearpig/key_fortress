@@ -4,7 +4,8 @@ It's a Firefox add-on that disables the hotkeys on certain websites that you can
 For example, I was so annoyed by Ctrl-K on the ChatGPT website that I made this extension.
 
 [Blog post about it](https://unmb.pw/misc/2024/01/22/key_fortress.html)
-[It's gonna be here when/if it gets approved by Mozilla](https://addons.mozilla.org/en-US/firefox/addon/keyfortress/)
+
+[Its addon page when/if it gets approved by Mozilla](https://addons.mozilla.org/en-US/firefox/addon/keyfortress/)
 
 Hate driven development!
 
