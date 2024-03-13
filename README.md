@@ -5,7 +5,7 @@ For example, I was so annoyed by Ctrl-K on the ChatGPT website that I made this 
 
 [Blog post about it](https://unmb.pw/misc/2024/01/22/key_fortress.html)
 
-[Its addon page when/if it gets approved by Mozilla](https://addons.mozilla.org/en-US/firefox/addon/keyfortress/)
+[Addon page](https://addons.mozilla.org/en-US/firefox/addon/keyfortress/)
 
 Hate driven development!
 
