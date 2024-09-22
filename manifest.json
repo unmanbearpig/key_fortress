@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
   "name": "KeyFortress",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Protect your hotkeys from being messed with by websites like GitHub and ChatGPT!",
   "browser_specific_settings": {
     "gecko": {
       "id": "ffaddon@unmb.pw",
-      "strict_min_version": "42.0"
+      "strict_min_version": "58.0"
     }
   },
   "icons": {
