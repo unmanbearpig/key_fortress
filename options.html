@@ -14,21 +14,23 @@
     or 'all' to block all hotkeys.
     Reload the website page for changes to take effect
   </div>
-  <textarea id="jsonInput" rows="10" cols="50"></textarea>
+  <textarea id="jsonInput" rows="10" cols="50">
+{
+  "openai.com":      [ "Ctrl-k" ],
+  "chat.openai.com": [ "Ctrl-k" ],
+  "github.com":      [ "/", "t" ],
+  "duckduckgo.com":  [ "/" ]
+}
+  </textarea>
   <button id="saveButton">Save</button>
 
   <h3>Example</h3>
   <textarea rows="15">
 {
-  "openai.com": [
-    "Ctrl-k"
-  ],
-  "chat.openai.com": [
-    "Ctrl-k"
-  ],
-  "github.com": [
-    "/", "t"
-  ]
+  "openai.com":      [ "Ctrl-k" ],
+  "chat.openai.com": [ "Ctrl-k" ],
+  "github.com":      [ "/", "t" ],
+  "duckduckgo.com":  [ "/" ]
 }
   </textarea>
 
