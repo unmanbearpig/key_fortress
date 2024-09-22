@@ -16,11 +16,12 @@ function blockKeys(event) {
   if (blockedKeys.includes('all') || blockedKeys.includes(event.key) || blockedKeys.includes(keyCombination)) {
     console.log(`blocking key ${keyCombination}`)
 
-    event.preventDefault();
     event.stopPropagation();
     event.stopImmediatePropagation();
 
-    event.returnValue = false;
+    // these will prevent even the default browser behavior
+    // event.preventDefault();
+    // event.returnValue = false;
 
     return false;
   } else {
